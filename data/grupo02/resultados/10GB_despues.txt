@@ -1,0 +1,121 @@
+FSCK started by root (auth:SIMPLE) from /172.28.1.1 for path /grupo02/dataset_10GB at Mon Oct 12 00:29:36 GMT 2026
+/grupo02/dataset_10GB <dir>
+/grupo02/dataset_10GB/dataset_grupo02_10GB 10737418240 bytes, replicated: replication=2, 80 block(s):  OK
+0. BP-1743654050-172.28.1.1-1791762386657:blk_1073741968_1144 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+1. BP-1743654050-172.28.1.1-1791762386657:blk_1073741969_1145 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+2. BP-1743654050-172.28.1.1-1791762386657:blk_1073741970_1146 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+3. BP-1743654050-172.28.1.1-1791762386657:blk_1073741971_1147 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+4. BP-1743654050-172.28.1.1-1791762386657:blk_1073741972_1148 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+5. BP-1743654050-172.28.1.1-1791762386657:blk_1073741973_1149 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+6. BP-1743654050-172.28.1.1-1791762386657:blk_1073741974_1150 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+7. BP-1743654050-172.28.1.1-1791762386657:blk_1073741975_1151 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+8. BP-1743654050-172.28.1.1-1791762386657:blk_1073741976_1152 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+9. BP-1743654050-172.28.1.1-1791762386657:blk_1073741977_1153 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+10. BP-1743654050-172.28.1.1-1791762386657:blk_1073741978_1154 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+11. BP-1743654050-172.28.1.1-1791762386657:blk_1073741979_1155 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+12. BP-1743654050-172.28.1.1-1791762386657:blk_1073741980_1156 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+13. BP-1743654050-172.28.1.1-1791762386657:blk_1073741981_1157 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+14. BP-1743654050-172.28.1.1-1791762386657:blk_1073741982_1158 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+15. BP-1743654050-172.28.1.1-1791762386657:blk_1073741983_1159 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+16. BP-1743654050-172.28.1.1-1791762386657:blk_1073741984_1160 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+17. BP-1743654050-172.28.1.1-1791762386657:blk_1073741985_1161 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+18. BP-1743654050-172.28.1.1-1791762386657:blk_1073741986_1162 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+19. BP-1743654050-172.28.1.1-1791762386657:blk_1073741987_1163 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+20. BP-1743654050-172.28.1.1-1791762386657:blk_1073741988_1164 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+21. BP-1743654050-172.28.1.1-1791762386657:blk_1073741989_1165 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+22. BP-1743654050-172.28.1.1-1791762386657:blk_1073741990_1166 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+23. BP-1743654050-172.28.1.1-1791762386657:blk_1073741991_1167 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+24. BP-1743654050-172.28.1.1-1791762386657:blk_1073741992_1168 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+25. BP-1743654050-172.28.1.1-1791762386657:blk_1073741993_1169 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+26. BP-1743654050-172.28.1.1-1791762386657:blk_1073741994_1170 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+27. BP-1743654050-172.28.1.1-1791762386657:blk_1073741995_1171 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+28. BP-1743654050-172.28.1.1-1791762386657:blk_1073741996_1172 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+29. BP-1743654050-172.28.1.1-1791762386657:blk_1073741997_1173 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+30. BP-1743654050-172.28.1.1-1791762386657:blk_1073741998_1174 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+31. BP-1743654050-172.28.1.1-1791762386657:blk_1073741999_1175 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+32. BP-1743654050-172.28.1.1-1791762386657:blk_1073742000_1176 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+33. BP-1743654050-172.28.1.1-1791762386657:blk_1073742001_1177 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+34. BP-1743654050-172.28.1.1-1791762386657:blk_1073742002_1178 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+35. BP-1743654050-172.28.1.1-1791762386657:blk_1073742003_1179 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+36. BP-1743654050-172.28.1.1-1791762386657:blk_1073742004_1180 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+37. BP-1743654050-172.28.1.1-1791762386657:blk_1073742005_1181 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+38. BP-1743654050-172.28.1.1-1791762386657:blk_1073742006_1182 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+39. BP-1743654050-172.28.1.1-1791762386657:blk_1073742007_1183 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+40. BP-1743654050-172.28.1.1-1791762386657:blk_1073742008_1184 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+41. BP-1743654050-172.28.1.1-1791762386657:blk_1073742009_1185 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+42. BP-1743654050-172.28.1.1-1791762386657:blk_1073742010_1186 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+43. BP-1743654050-172.28.1.1-1791762386657:blk_1073742011_1187 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+44. BP-1743654050-172.28.1.1-1791762386657:blk_1073742012_1188 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+45. BP-1743654050-172.28.1.1-1791762386657:blk_1073742013_1189 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+46. BP-1743654050-172.28.1.1-1791762386657:blk_1073742014_1190 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+47. BP-1743654050-172.28.1.1-1791762386657:blk_1073742015_1191 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+48. BP-1743654050-172.28.1.1-1791762386657:blk_1073742016_1192 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+49. BP-1743654050-172.28.1.1-1791762386657:blk_1073742017_1193 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+50. BP-1743654050-172.28.1.1-1791762386657:blk_1073742018_1194 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+51. BP-1743654050-172.28.1.1-1791762386657:blk_1073742019_1195 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+52. BP-1743654050-172.28.1.1-1791762386657:blk_1073742020_1196 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+53. BP-1743654050-172.28.1.1-1791762386657:blk_1073742021_1197 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+54. BP-1743654050-172.28.1.1-1791762386657:blk_1073742022_1198 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+55. BP-1743654050-172.28.1.1-1791762386657:blk_1073742023_1199 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+56. BP-1743654050-172.28.1.1-1791762386657:blk_1073742024_1200 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+57. BP-1743654050-172.28.1.1-1791762386657:blk_1073742025_1201 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+58. BP-1743654050-172.28.1.1-1791762386657:blk_1073742026_1202 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+59. BP-1743654050-172.28.1.1-1791762386657:blk_1073742027_1203 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+60. BP-1743654050-172.28.1.1-1791762386657:blk_1073742028_1204 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+61. BP-1743654050-172.28.1.1-1791762386657:blk_1073742029_1205 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+62. BP-1743654050-172.28.1.1-1791762386657:blk_1073742030_1206 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+63. BP-1743654050-172.28.1.1-1791762386657:blk_1073742031_1207 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+64. BP-1743654050-172.28.1.1-1791762386657:blk_1073742032_1208 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+65. BP-1743654050-172.28.1.1-1791762386657:blk_1073742033_1209 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+66. BP-1743654050-172.28.1.1-1791762386657:blk_1073742034_1210 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+67. BP-1743654050-172.28.1.1-1791762386657:blk_1073742035_1211 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+68. BP-1743654050-172.28.1.1-1791762386657:blk_1073742036_1212 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+69. BP-1743654050-172.28.1.1-1791762386657:blk_1073742037_1213 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+70. BP-1743654050-172.28.1.1-1791762386657:blk_1073742038_1214 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+71. BP-1743654050-172.28.1.1-1791762386657:blk_1073742039_1215 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+72. BP-1743654050-172.28.1.1-1791762386657:blk_1073742040_1216 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+73. BP-1743654050-172.28.1.1-1791762386657:blk_1073742041_1217 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+74. BP-1743654050-172.28.1.1-1791762386657:blk_1073742042_1218 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+75. BP-1743654050-172.28.1.1-1791762386657:blk_1073742043_1219 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+76. BP-1743654050-172.28.1.1-1791762386657:blk_1073742044_1220 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+77. BP-1743654050-172.28.1.1-1791762386657:blk_1073742045_1221 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+78. BP-1743654050-172.28.1.1-1791762386657:blk_1073742046_1222 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK], DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK]]
+79. BP-1743654050-172.28.1.1-1791762386657:blk_1073742047_1223 len=134217728 Live_repl=2  [DatanodeInfoWithStorage[172.28.1.3:9866,DS-b73977a2-7faf-48ab-9220-8e2a12ed4357,DISK], DatanodeInfoWithStorage[172.28.1.2:9866,DS-21e9faec-7c16-4e4d-931f-bc7bbd5cb985,DISK]]
+
+
+Status: HEALTHY
+ Number of data-nodes:	2
+ Number of racks:		1
+ Total dirs:			1
+ Total symlinks:		0
+
+Replicated Blocks:
+ Total size:	10737418240 B
+ Total files:	1
+ Total blocks (validated):	80 (avg. block size 134217728 B)
+ Minimally replicated blocks:	80 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	2
+ Average block replication:	2.0
+ Missing blocks:		0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+
+Erasure Coded Block Groups:
+ Total size:	0 B
+ Total files:	0
+ Total block groups (validated):	0
+ Minimally erasure-coded block groups:	0
+ Over-erasure-coded block groups:	0
+ Under-erasure-coded block groups:	0
+ Unsatisfactory placement block groups:	0
+ Average block group size:	0.0
+ Missing block groups:		0
+ Corrupt block groups:		0
+ Missing internal blocks:	0
+FSCK ended at Mon Oct 12 00:29:36 GMT 2026 in 4 milliseconds
+
+
+The filesystem under path '/grupo02/dataset_10GB' is HEALTHY

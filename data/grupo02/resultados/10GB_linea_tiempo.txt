@@ -1,0 +1,33 @@
+Prueba de fallo - Dataset 10 GB - Grupo 02
+DataNode detenido: worker3 (172.28.1.7)
+Horas en UTC (reloj del contenedor master). Hora local Bolivia = UTC-4.
+MD5 de referencia: 92e78edb5c572176b2ac46d48d432a6a
+
+00:11:58  Ultimo heartbeat recibido de worker3 (Last contact) -> docker compose stop worker3
+~00:14    Lectura completa del archivo con worker3 caido: md5 92e78edb5c572176b2ac46d48d432a6a (igual al original)
+00:22:47  dfsadmin -report muestra Live datanodes (2) / Dead datanodes (1). fsck: Under-replicated 0
+00:26:31  NameNode: "BLOCK* removeDeadDatanode: lost heartbeat from 172.28.1.7:9866"
+00:26:46  fsck: Under-replicated blocks: 55 (68.75 %)
+00:27:59  fsck: Under-replicated blocks: 33 (41.25 %)
+00:28:24  fsck: Under-replicated blocks: 3 (3.75 %)
+00:28:48  fsck: Under-replicated blocks: 0 (0.0 %) -> factor de replicacion restaurado
+
+Distribucion antes de la falla (80 bloques, 160 replicas)
+worker1 = 54, worker2 = 51, worker3 = 55
+Pares: worker1+worker2 = 25, worker1+worker3 = 29, worker2+worker3 = 26
+
+Bloques afectados (con replica en worker3): 55 de 80
+0 1 2 3 4 7 8 11 12 14 15 17 18 20 23 24 25 27 28 29 30 31 34 35 36 37 38 39 40 43 44 45 47 49 50 52 53 55 56 58 59 60 61 62 64 65 66 67 69 70 72 73 77 78 79
+
+Nuevas replicas
+26 bloques (worker2+worker3) -> copia desde worker2 hacia worker1
+29 bloques (worker1+worker3) -> copia desde worker1 hacia worker2
+Total copiado: 55 x 128 MB = ~6.9 GB
+
+Distribucion despues de la recuperacion: worker1 = 80, worker2 = 80
+
+Tiempos
+Caida -> declarado Dead en el reporte:          ~10 min 49 s
+Caida -> NameNode elimina el nodo del mapa:      14 min 33 s
+Inicio de re-replicacion -> 0 subreplicados:     ~2 min 17 s (~50 MB/s)
+Caida -> recuperacion total:                     ~16 min 50 s
