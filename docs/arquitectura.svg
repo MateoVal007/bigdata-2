@@ -1,12 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" font-family="Arial, Helvetica, sans-serif">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
     </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f8a3e"/>
+    </marker>
   </defs>
-  <rect width="1200" height="900" fill="#ffffff"/>
+  <rect width="1200" height="1000" fill="#ffffff"/>
 
-  <text x="600" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#222">Arquitectura de bigdata-docker-compose (6 contenedores)</text>
+  <text x="600" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#222">Arquitectura del clúster bigdata-2 (7 contenedores · 1 NameNode + 3 DataNodes)</text>
 
   <!-- Host -->
   <rect x="20" y="58" width="1160" height="122" rx="10" fill="#f4f4f4" stroke="#888" stroke-dasharray="6 4"/>
@@ -14,15 +17,15 @@
   <rect x="36" y="94" width="250" height="72" rx="8" fill="#fff" stroke="#666"/>
   <text x="161" y="120" text-anchor="middle" font-size="14" font-weight="bold">Navegador / terminal</text>
   <text x="161" y="140" text-anchor="middle" font-size="12">docker compose up -d</text>
-  <text x="161" y="157" text-anchor="middle" font-size="12">docker compose exec master …</text>
+  <text x="161" y="157" text-anchor="middle" font-size="12">docker compose stop worker2 …</text>
   <text x="310" y="88" font-size="13" font-weight="bold" fill="#333">Bind mounts (carpetas del repositorio):</text>
-  <text x="310" y="108" font-size="12.5">./data  →  /data   (master, worker1, worker2, livy, zeppelin)  ·  grades.csv, ssn-address.tsv, batches/</text>
+  <text x="310" y="108" font-size="12.5">./data  →  /data   (master, worker1, worker2, worker3, livy, zeppelin)  ·  grades.csv, grupo02/resultados/</text>
   <text x="310" y="127" font-size="12.5">./init.sql  →  /docker-entrypoint-initdb.d/init.sql   (hivemetastore)</text>
   <text x="310" y="146" font-size="12.5">./livy_batches  →  /livy_batches   (livy)</text>
   <text x="310" y="165" font-size="12.5">./zeppelin_notebooks  →  /zeppelin_notebooks   (zeppelin)</text>
 
   <!-- Network -->
-  <rect x="20" y="215" width="1160" height="670" rx="10" fill="#eef4fb" stroke="#4a78b5" stroke-width="1.5"/>
+  <rect x="20" y="215" width="1160" height="770" rx="10" fill="#eef4fb" stroke="#4a78b5" stroke-width="1.5"/>
   <text x="1164" y="240" text-anchor="end" font-size="15" font-weight="bold" fill="#2c5a94">Red Docker spark_net · bridge · subred 172.28.0.0/16 · IP fija por contenedor + extra_hosts</text>
 
   <!-- host -> network -->
@@ -60,9 +63,10 @@
   <text x="205" y="504" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · HADOOP_NODE=namenode · HIVE_CONFIGURE</text>
   <rect x="205" y="516" width="190" height="100" rx="6" fill="#fff" stroke="#2c5a94"/>
   <text x="300" y="540" text-anchor="middle" font-size="13" font-weight="bold">HDFS</text>
-  <text x="300" y="562" text-anchor="middle" font-size="12">NameNode :9870</text>
-  <text x="300" y="580" text-anchor="middle" font-size="12">Secondary NN :9868</text>
-  <text x="300" y="598" text-anchor="middle" font-size="12">(metadatos)</text>
+  <text x="300" y="560" text-anchor="middle" font-size="12">NameNode :9870</text>
+  <text x="300" y="577" text-anchor="middle" font-size="12">Secondary NN :9868</text>
+  <text x="300" y="594" text-anchor="middle" font-size="12">metadatos y mapa de bloques</text>
+  <text x="300" y="610" text-anchor="middle" font-size="11" fill="#2c5a94">replicación 2 · bloque 128 MB</text>
   <rect x="405" y="516" width="190" height="100" rx="6" fill="#fff" stroke="#2c5a94"/>
   <text x="500" y="540" text-anchor="middle" font-size="13" font-weight="bold">YARN</text>
   <text x="500" y="562" text-anchor="middle" font-size="12">ResourceManager</text>
@@ -78,21 +82,31 @@
   <text x="900" y="580" text-anchor="middle" font-size="12">JDBC :10000</text>
 
   <!-- workers -->
-  <rect x="80" y="715" width="440" height="150" rx="8" fill="#e6f4e8" stroke="#2f8a3e" stroke-width="1.5"/>
-  <text x="95" y="740" font-size="15" font-weight="bold">worker1 · 172.28.1.2</text>
-  <text x="95" y="758" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · HADOOP_NODE=datanode</text>
-  <text x="95" y="784" font-size="13">HDFS DataNode (bloques) · UI :9864</text>
-  <text x="95" y="804" font-size="13">YARN NodeManager</text>
-  <text x="95" y="824" font-size="13">Spark Worker · UI :8081</text>
-  <text x="95" y="850" font-size="12" fill="#2f8a3e">SPARK_MASTER_ADDRESS=spark://master:7077</text>
+  <rect x="40" y="715" width="360" height="150" rx="8" fill="#e6f4e8" stroke="#2f8a3e" stroke-width="1.5"/>
+  <text x="55" y="740" font-size="15" font-weight="bold">worker1 · 172.28.1.2 · DN1</text>
+  <text x="55" y="758" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · datanode</text>
+  <text x="55" y="784" font-size="13">HDFS DataNode (bloques) · UI :9864</text>
+  <text x="55" y="804" font-size="13">YARN NodeManager</text>
+  <text x="55" y="824" font-size="13">Spark Worker · UI :8081</text>
+  <text x="55" y="850" font-size="12" fill="#2f8a3e">Activo en las dos pruebas</text>
 
-  <rect x="680" y="715" width="440" height="150" rx="8" fill="#e6f4e8" stroke="#2f8a3e" stroke-width="1.5"/>
-  <text x="695" y="740" font-size="15" font-weight="bold">worker2 · 172.28.1.3</text>
-  <text x="695" y="758" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · HADOOP_NODE=datanode</text>
-  <text x="695" y="784" font-size="13">HDFS DataNode (bloques) · UI :9865</text>
-  <text x="695" y="804" font-size="13">YARN NodeManager</text>
-  <text x="695" y="824" font-size="13">Spark Worker · UI :8082</text>
-  <text x="695" y="850" font-size="12" fill="#2f8a3e">SPARK_MASTER_ADDRESS=spark://master:7077</text>
+  <rect x="420" y="715" width="360" height="150" rx="8" fill="#e6f4e8" stroke="#2f8a3e" stroke-width="1.5"/>
+  <text x="435" y="740" font-size="15" font-weight="bold">worker2 · 172.28.1.3 · DN2</text>
+  <text x="435" y="758" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · datanode</text>
+  <text x="435" y="784" font-size="13">HDFS DataNode (bloques) · UI :9865</text>
+  <text x="435" y="804" font-size="13">YARN NodeManager</text>
+  <text x="435" y="824" font-size="13">Spark Worker · UI :8082</text>
+  <text x="435" y="850" font-size="12" font-weight="bold" fill="#b3261e">Detenido en la prueba de 1 GB</text>
+
+  <rect x="800" y="715" width="360" height="150" rx="8" fill="#e6f4e8" stroke="#2f8a3e" stroke-width="1.5"/>
+  <text x="815" y="740" font-size="15" font-weight="bold">worker3 · 172.28.1.7 · DN3</text>
+  <rect x="1082" y="726" width="66" height="20" rx="10" fill="#2f8a3e"/>
+  <text x="1115" y="740" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">NUEVO</text>
+  <text x="815" y="758" font-size="11.5" fill="#555">panovvv/hadoop-hive-spark:2.5.2 · datanode</text>
+  <text x="815" y="784" font-size="13">HDFS DataNode (bloques) · UI :9874→9864</text>
+  <text x="815" y="804" font-size="13">YARN NodeManager</text>
+  <text x="815" y="824" font-size="13">Spark Worker · UI :8083</text>
+  <text x="815" y="850" font-size="12" font-weight="bold" fill="#b3261e">Detenido en la prueba de 10 GB</text>
 
   <!-- arrows -->
   <line x1="370" y1="326" x2="433" y2="326" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
@@ -104,12 +118,22 @@
   <line x1="900" y1="458" x2="960" y2="392" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
   <text x="940" y="436" font-size="12">metastore (JDBC)</text>
 
-  <line x1="400" y1="630" x2="300" y2="713" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
-  <line x1="800" y1="630" x2="900" y2="713" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
-  <text x="600" y="662" text-anchor="middle" font-size="12.5" fill="#333">NameNode → DataNodes · RM → NodeManagers</text>
-  <text x="600" y="680" text-anchor="middle" font-size="12.5" fill="#333">Spark Master → Workers</text>
+  <line x1="400" y1="630" x2="230" y2="713" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="600" y1="630" x2="600" y2="713" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="800" y1="630" x2="970" y2="713" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="588" y="664" text-anchor="end" font-size="12.5" fill="#333">NameNode → DataNodes</text>
+  <text x="588" y="682" text-anchor="end" font-size="11.5" fill="#555">(heartbeats y reportes de bloques)</text>
+  <text x="612" y="664" font-size="12.5" fill="#333">RM → NodeManagers</text>
+  <text x="612" y="682" font-size="12.5" fill="#333">Spark Master → Workers</text>
 
-  <line x1="522" y1="790" x2="678" y2="790" stroke="#2f8a3e" stroke-width="2" stroke-dasharray="6 4" marker-start="url(#a)" marker-end="url(#a)"/>
-  <text x="600" y="780" text-anchor="middle" font-size="12" fill="#2f8a3e">réplica de bloques</text>
-  <text x="600" y="808" text-anchor="middle" font-size="12" fill="#2f8a3e">(factor 2)</text>
+  <!-- replicación -->
+  <line x1="220" y1="865" x2="220" y2="895" stroke="#2f8a3e" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="600" y1="865" x2="600" y2="895" stroke="#2f8a3e" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="980" y1="865" x2="980" y2="895" stroke="#2f8a3e" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="220" y1="895" x2="980" y2="895" stroke="#2f8a3e" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="330" y="880" width="540" height="30" rx="15" fill="#fff" stroke="#2f8a3e" stroke-width="1.5"/>
+  <text x="600" y="900" text-anchor="middle" font-size="13" font-weight="bold" fill="#2f8a3e">Réplicas de bloques HDFS · dfs.replication = 2 · bloques de 128 MB</text>
+
+  <text x="600" y="940" text-anchor="middle" font-size="12.5" fill="#333">Cada bloque se guarda en 2 de los 3 DataNodes. Si uno cae, el archivo se sigue leyendo desde la otra copia</text>
+  <text x="600" y="960" text-anchor="middle" font-size="12.5" fill="#333">y el NameNode vuelve a copiar los bloques que faltan en los nodos que siguen vivos.</text>
 </svg>
